@@ -35,12 +35,3 @@ The audio files should be organized as follows:
 2. Ensure they are named correctly (sample0.wav, sample1.wav, sample2.wav)
 3. The page will automatically display audio players for these files
 
-## Scoring Guidelines
-
-When evaluating the audio samples, use this scale:
-
-- **1 – Bad:** Very annoying, hard to understand
-- **2 – Poor:** Annoying  
-- **3 – Fair:** Slightly annoying
-- **4 – Good:** Perceptible but not annoying
-- **5 – Excellent:** Imperceptible distortion

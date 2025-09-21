@@ -124,6 +124,30 @@
             }
         }
     </style>
+    <style>
+        /* Additional styles to fix table spacing */
+        .comparison-table {
+            table-layout: fixed;
+            border-spacing: 0;
+        }
+        
+        .row-header {
+            width: 20%;
+            text-align: left;
+            word-wrap: break-word;
+            padding: 10px;
+        }
+        
+        .column-header, .audio-cell {
+            width: 16%;
+            padding: 10px;
+        }
+        
+        .audio-player {
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -132,15 +156,18 @@
         <table class="comparison-table">
             <thead>
                 <tr>
-                    <th></th>
                     <th class="column-header">Ground Truth</th>
                     <th class="column-header">MeanSpeech</th>
                     <th class="column-header">FastSpeech2</th>
+                    <th class="column-header">Match-TTS(NFE=1)</th>
+                    <th class="column-header">ViTS</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="row-header">the department hopes to design a practical system which will fully meet the needs of the protective research section of the secret service.</td>
+                    <td class="row-header" colspan="5" style="font-weight: normal;">the department hopes to design a practical system which will fully meet the needs of the protective research section of the secret service.</td>
+                </tr>
+                <tr>
                     <td class="audio-cell">
                         <audio class="audio-player" controls>
                             <source src="setA/gt1.wav" type="audio/wav">
@@ -156,6 +183,18 @@
                     <td class="audio-cell">
                         <audio class="audio-player" controls>
                             <source src="setA/fs1.wav" type="audio/wav">
+                            <span class="no-audio">Audio not available</span>
+                        </audio>
+                    </td>
+                    <td class="audio-cell">
+                        <audio class="audio-player" controls>
+                            <source src="setA/mt1.wav" type="audio/wav">
+                            <span class="no-audio">Audio not available</span>
+                        </audio>
+                    </td>
+                    <td class="audio-cell">
+                        <audio class="audio-player" controls>
+                            <source src="setA/vits1.wav" type="audio/wav">
                             <span class="no-audio">Audio not available</span>
                         </audio>
                     </td>
