@@ -151,17 +151,16 @@
 </head>
 <body>
     <div class="container">
-        <h1>Speech Samples Comparison</h1>
-        
+        <h1>Single-Speaker (LJSpeech) Speech Samples Comparison</h1>
         <table class="comparison-table">
             <thead>
                 <tr>
                     <th class="column-header">Ground Truth</th>
-                    <th class="column-header">MeanSpeech</th>
+                    <th class="column-header">MeanSpeech (Ours)</th>
                     <th class="column-header">FastSpeech2</th>
                     <th class="column-header">Match-TTS(NFE=1)</th>
                     <th class="column-header">ViTS</th>
-                    <th class="column-header">ReFlow</th>
+                    <th class="column-header">ReFlow-TTS</th>
                 </tr>
             </thead>
             <tbody>
@@ -195,7 +194,7 @@
                     </td>
                     <td class="audio-cell">
                         <audio class="audio-player" controls>
-                            <source src="ljspeech0/gt.wav" type="audio/wav">
+                            <source src="ljspeech0/vits.wav" type="audio/wav">
                             <span class="no-audio">Audio not available</span>
                         </audio>
                     </td>
@@ -250,5 +249,123 @@
             </tbody>
         </table>
     </div>
+
+    <div class="container">
+        <h1>4-Speaker Speech Samples Comparison</h1>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th class="column-header">Speaker</th>
+                    <th class="column-header">Ground Truth</th>
+                    <th class="column-header">MeanSpeech (Ours)</th>
+                    <th class="column-header">ViTS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="row-header" colspan="4" style="font-weight: normal;">and in the silence mister verloc heard against a window pane the faint buzzing of a fly his first fly of the year heralding better than any number of swallows the approach of spring</td>
+                </tr>
+                <tr>
+                    <td class="row-header" style="background-color: white;">Female UK</td>
+                    <td class="audio-cell">
+                        <audio class="audio-player" controls>
+                            <source src="female-uk/gt.wav" type="audio/wav">
+                            <span class="no-audio">Audio not available</span>
+                        </audio>
+                    </td>
+                    <td class="audio-cell">
+                        <audio class="audio-player" controls>
+                            <source src="female-uk/ms.wav" type="audio/wav">
+                            <span class="no-audio">Audio not available</span>
+                        </audio>
+                    </td>
+                    <td class="audio-cell">
+                        <audio class="audio-player" controls>
+                            <source src="female-uk/vits.wav" type="audio/wav">
+                            <span class="no-audio">Audio not available</span>
+                        </audio>
+                    </td>
+                    
+                <tr>
+                    <td class="row-header" colspan="4" style="font-weight: normal;">and now he clutched the thought that alice was not a mere child of the woods but a daughter of an old family of cavaliers</td>
+                </tr>
+                <tr>
+                    <td class="row-header" style="background-color: white;">Female US</td>
+                    <td class="audio-cell">
+                        <audio class="audio-player" controls>
+                            <source src="female-us/gt.wav" type="audio/wav">
+                            <span class="no-audio">Audio not available</span>
+                        </audio>
+                    </td>
+                    <td class="audio-cell">
+                        <audio class="audio-player" controls>
+                            <source src="female-us/ms.wav" type="audio/wav">
+                            <span class="no-audio">Audio not available</span>
+                        </audio>
+                    </td>
+                    <td class="audio-cell">
+                        <audio class="audio-player" controls>
+                            <source src="female-us/vits.wav" type="audio/wav">
+                            <span class="no-audio">Audio not available</span>
+                        </audio>
+                    </td>
+                </tr>
+
+                                    
+                <tr>
+                    <td class="row-header" colspan="4" style="font-weight: normal;">Then he must rise and challenge all or any to come forward and do battle with him to win the axe and become chief in his place.</td>
+                </tr>
+                <tr>
+                    <td class="row-header" style="background-color: white;">Male UK</td>
+                    <td class="audio-cell">
+                        <audio class="audio-player" controls>
+                            <source src="male-uk/gt.wav" type="audio/wav">
+                            <span class="no-audio">Audio not available</span>
+                        </audio>
+                    </td>
+                    <td class="audio-cell">
+                        <audio class="audio-player" controls>
+                            <source src="male-uk/ms.wav" type="audio/wav">
+                            <span class="no-audio">Audio not available</span>
+                        </audio>
+                    </td>
+                    <td class="audio-cell">
+                        <audio class="audio-player" controls>
+                            <source src="male-uk/vits.wav" type="audio/wav">
+                            <span class="no-audio">Audio not available</span>
+                        </audio>
+                    </td>
+                </tr>
+            
+                                   
+                <tr>
+                    <td class="row-header" colspan="4" style="font-weight: normal;">is the fact (for repeated experiment has convinced me it is a fact) that the circular opening in question is visible from no other attainable point of view than that afforded by the narrow ledge upon the face of the rock.</td>
+                </tr>
+                <tr>
+                    <td class="row-header" style="background-color: white;">Male US</td>
+                    <td class="audio-cell">
+                        <audio class="audio-player" controls>
+                            <source src="male-us/gt.wav" type="audio/wav">
+                            <span class="no-audio">Audio not available</span>
+                        </audio>
+                    </td>
+                    <td class="audio-cell">
+                        <audio class="audio-player" controls>
+                            <source src="male-us/ms.wav" type="audio/wav">
+                            <span class="no-audio">Audio not available</span>
+                        </audio>
+                    </td>
+                    <td class="audio-cell">
+                        <audio class="audio-player" controls>
+                            <source src="male-us/vits.wav" type="audio/wav">
+                            <span class="no-audio">Audio not available</span>
+                        </audio>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
 </body>
 </html>
